@@ -25,7 +25,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.30);
+            background-color: rgba(255, 255, 255, 0.15);
             z-index: -1;
         }
 
@@ -127,19 +127,6 @@
             font-size: 1.8rem;
             font-weight: bold;
             color: #2d5016;
-        }
-
-        .icon-circle {
-            width: 60px;
-            height: 60px;
-            background-color: #4caf50;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 auto 20px;
         }
 
         @media (max-width: 768px) {

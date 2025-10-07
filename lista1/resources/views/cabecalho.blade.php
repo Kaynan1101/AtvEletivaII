@@ -1,7 +1,7 @@
 <div class="container">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('bemvindo') }}">Calculadora PHP</a>
+            <a class="navbar-brand" href="{{ route('bemvindo') }}">Exercícios PHP - LISTA 1</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" style="background-color: white;">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,6 +41,18 @@
                             <li><a class="dropdown-item" href="{{ route('ex13') }}">Ex 13 - Juros Simples</a></li>
                             <li><a class="dropdown-item" href="{{ route('ex14') }}">Ex 14 - Juros Compostos</a></li>
                             <li><a class="dropdown-item" href="{{ route('ex15') }}">Ex 15 - Conversão Tempo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Exercícios 16-20
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('ex16') }}">Ex 16 - Desconto %</a></li>
+                            <li><a class="dropdown-item" href="{{ route('ex17') }}">Ex 17 - Juros Simples</a></li>
+                            <li><a class="dropdown-item" href="{{ route('ex18') }}">Ex 18 - Montante</a></li>
+                            <li><a class="dropdown-item" href="{{ route('ex19') }}">Ex 19 - Dias</a></li>
+                            <li><a class="dropdown-item" href="{{ route('ex20') }}">Ex 20 - Velocidade</a></li>
                         </ul>
                     </li>
                 </ul>

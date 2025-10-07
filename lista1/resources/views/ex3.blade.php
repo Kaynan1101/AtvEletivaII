@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Fahrenheit → Celsius')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-temperature-low"></i></div>
 <h2 class="card-title">Fahrenheit → Celsius</h2>
 <form method="post" action="{{ route('ex3.converter') }}">
     @csrf

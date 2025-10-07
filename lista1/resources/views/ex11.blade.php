@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Cálculo IMC')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-weight"></i></div>
 <h2 class="card-title">Cálculo do IMC</h2>
 <form method="post" action="{{ route('ex11.calcular') }}">
     @csrf

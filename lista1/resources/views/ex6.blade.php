@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Perímetro do Retângulo')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-border-all"></i></div>
 <h2 class="card-title">Perímetro do Retângulo</h2>
 <form method="post" action="{{ route('ex6.calcular') }}">
     @csrf

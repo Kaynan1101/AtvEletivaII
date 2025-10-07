@@ -252,3 +252,91 @@ Route::post('/ex15', function(Request $request) {
     
     return view('ex15', compact('horas', 'minutos', 'segundos'));
 })->name('ex15.converter');
+
+Route::get('/ex16', function () {
+    return view('ex16');
+})->name('ex16');
+
+Route::post('/ex16', function(Request $request) {
+    $request->validate([
+        'preco' => 'required|numeric|min:0',
+        'percentual' => 'required|numeric|min:0|max:100',
+    ]);
+    
+    $preco = $request->input('preco');
+    $percentual = $request->input('percentual');
+    $desconto = $preco * ($percentual / 100);
+    $precoFinal = $preco - $desconto;
+    
+    return view('ex16', compact('precoFinal', 'desconto'));
+})->name('ex16.calcular');
+
+Route::get('/ex17', function () {
+    return view('ex17');
+})->name('ex17');
+
+Route::post('/ex17', function(Request $request) {
+    $request->validate([
+        'capital' => 'required|numeric|min:0',
+        'taxa' => 'required|numeric|min:0',
+        'periodo' => 'required|integer|min:0',
+    ]);
+    
+    $capital = $request->input('capital');
+    $taxa = $request->input('taxa');
+    $periodo = $request->input('periodo');
+    $juros = $capital * ($taxa / 100) * $periodo;
+    
+    return view('ex17', compact('juros'));
+})->name('ex17.calcular');
+
+Route::get('/ex18', function () {
+    return view('ex18');
+})->name('ex18');
+
+Route::post('/ex18', function(Request $request) {
+    $request->validate([
+        'capital' => 'required|numeric|min:0',
+        'taxa' => 'required|numeric|min:0',
+        'periodo' => 'required|integer|min:0',
+    ]);
+    
+    $capital = $request->input('capital');
+    $taxa = $request->input('taxa');
+    $periodo = $request->input('periodo');
+    $montante = $capital * pow(1 + ($taxa / 100), $periodo);
+    
+    return view('ex18', compact('montante'));
+})->name('ex18.calcular');
+
+Route::get('/ex19', function () {
+    return view('ex19');
+})->name('ex19');
+
+Route::post('/ex19', function(Request $request) {
+    $request->validate(['dias' => 'required|integer|min:0']);
+    
+    $dias = $request->input('dias');
+    $horas = $dias * 24;
+    $minutos = $horas * 60;
+    $segundos = $minutos * 60;
+    
+    return view('ex19', compact('horas', 'minutos', 'segundos'));
+})->name('ex19.converter');
+
+Route::get('/ex20', function () {
+    return view('ex20');
+})->name('ex20');
+
+Route::post('/ex20', function(Request $request) {
+    $request->validate([
+        'distancia' => 'required|numeric|min:0',
+        'tempo' => 'required|numeric|min:0.01',
+    ]);
+    
+    $distancia = $request->input('distancia');
+    $tempo = $request->input('tempo');
+    $velocidade = $distancia / $tempo;
+    
+    return view('ex20', compact('velocidade'));
+})->name('ex20.calcular');

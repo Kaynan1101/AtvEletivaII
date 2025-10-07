@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Área do Retângulo')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-square"></i></div>
 <h2 class="card-title">Área do Retângulo</h2>
 <form method="post" action="{{ route('ex4.calcular') }}">
     @csrf

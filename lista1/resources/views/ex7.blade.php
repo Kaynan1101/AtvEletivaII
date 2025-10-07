@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Perímetro do Círculo')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-circle-notch"></i></div>
 <h2 class="card-title">Perímetro do Círculo</h2>
 <form method="post" action="{{ route('ex7.calcular') }}">
     @csrf

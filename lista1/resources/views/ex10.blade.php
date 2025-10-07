@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Km → Milhas')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-road"></i></div>
 <h2 class="card-title">Quilômetros → Milhas</h2>
 <form method="post" action="{{ route('ex10.converter') }}">
     @csrf

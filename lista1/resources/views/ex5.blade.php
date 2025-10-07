@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Área do Círculo')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-circle"></i></div>
 <h2 class="card-title">Área do Círculo</h2>
 <form method="post" action="{{ route('ex5.calcular') }}">
     @csrf

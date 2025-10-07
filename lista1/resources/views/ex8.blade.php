@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Potenciação')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-superscript"></i></div>
 <h2 class="card-title">Cálculo de Potência</h2>
 <form method="post" action="{{ route('ex8.calcular') }}">
     @csrf

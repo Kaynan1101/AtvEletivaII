@@ -3,9 +3,6 @@
 @section('title', 'Média de Notas')
 
 @section('conteudo')
-<div class="icon-circle">
-    <i class="fas fa-chart-line"></i>
-</div>
 
 <h2 class="card-title">Cálculo de Média</h2>
 

@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Metros → Centímetros')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-ruler"></i></div>
 <h2 class="card-title">Metros → Centímetros</h2>
 <form method="post" action="{{ route('ex9.converter') }}">
     @csrf

@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title', 'Cálculo de Desconto')
 @section('conteudo')
-<div class="icon-circle"><i class="fas fa-tag"></i></div>
 <h2 class="card-title">Cálculo de Desconto</h2>
 <form method="post" action="{{ route('ex12.calcular') }}">
     @csrf
